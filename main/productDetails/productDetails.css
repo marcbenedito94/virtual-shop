@@ -1,0 +1,19 @@
+#product-details-table {
+    margin: 0 auto;
+}
+
+.product-img {
+    align: left;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.product-description {
+    text-align: center;
+}
+
+.product-price {
+    text-align: center;;
+}

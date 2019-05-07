@@ -1,0 +1,90 @@
+[
+    {
+        "id": "list-rh",
+        "title": "Recreación Histórica",
+        "num-children": "2",
+        "children": [
+            {
+                "id": "list-rh-armas",
+                "class": "sublist-rh",
+                "title": "Armas",
+                "children": [
+                    {
+                        "id": "list-rh-armas-hachas",
+                        "title": "Hachas"
+                    },
+                    {
+                        "id": "list-rh-armas-lanzas",
+                        "title": "Lanzas"            
+                    },
+                    {
+                        "id": "list-rh-armas-mazasmartillos",
+                        "title": "Mazas y Martillos de Guerra"            
+                    },
+                    {
+                        "id": "list-rh-armas-dagas",
+                        "title": "Dagas"            
+                    },
+                    {
+                        "id": "list-rh-armas-espadas",
+                        "title": "Espadas"
+                    }
+                ]
+            },
+            {
+                "id": "list-rh-arqueria",
+                "class": "sublist-rh",
+                "title": "Arquería"            
+            },
+            {
+                "id": "list-rh-ropa",
+                "class": "sublist-rh",
+                "title": "Ropa"            
+            },
+            {
+                "id": "list-rh-tiendas",
+                "class": "sublist-rh",
+                "title": "Tiendas"            
+            },
+            {
+                "id": "list-rh-campamento",
+                "class": "sublist-rh",
+                "title": "Campamento"
+            }
+        ]
+    },
+    {
+        "id": "list-cuchillos",
+        "title": "Cuchillos",
+        "num-children": "1",
+        "children": [
+            {
+                "id": "list-cuchillos-caza",
+                "class": "sublist-cuchillos",
+                "title": "Caza"
+            },
+            {
+                "id": "list-cuchillos-survival",
+                "class": "sublist-cuchillos",
+                "title": "Survival"
+            },
+            {
+                "id": "list-cuchillos-complementos",
+                "class": "sublist-cuchillos",
+                "title": "Bushcraft/Complementos"
+            }
+        ]
+    },
+    {
+        "id": "list-western",
+        "title": "Western"
+    },
+    {
+        "id": "list-survival",
+        "title": "Survival"
+    },
+    {
+        "id": "list-moroscristianos",
+        "title": "Moros y Cristianos"
+    }
+]
