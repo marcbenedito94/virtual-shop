@@ -3,6 +3,7 @@
     $database = 'shop';
     $username = 'root';
     $password = '';
+    $name = '';
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $database);
     // Check connection
@@ -11,22 +12,29 @@
         $password = $_REQUEST['password'];
         
         if ($name){
-            $sql = 'select password as pass from users where username="' . $name . '"';
+            $sql = 'select username as user, password as pass from users where username="' . $name . '"';
 
-            $password_hash_obj = $conn->query($sql);
+            $obj = $conn->query($sql);
 
-            $aux_password_hash_obj = $password_hash_obj -> fetch_assoc();
-            $password_hash = $aux_password_hash_obj['pass'];
+            if ($obj) {
+                $aux_obj = $obj -> fetch_assoc();                
+                $password_hash = $aux_obj['pass'];
+
+                if ($password_hash) {
+                    if (password_verify($password, $password_hash)) {
+                        // echo 'Correct';
+                        // echo '<script>\n';
+                        // echo '\t var name_of_user = "' . '"\n';
+                        // echo '</script>\n';
+                        $name = $aux_obj['user'];
+                        header('Location: ./loginCorrect.php');
+                    }
+                } 
+                else {
+                    echo 'InCorrect';
+                }
+            }
             
-            echo $password_hash;
-
-            // if ($password_hash_obj -> num_rows > 0) {
-            //     // output data of each row
-            //     $nroviajenew=mysql_fetch_assoc($maxnroviaje);
-            // } 
-            // else {
-            //     echo 'InCorrect';
-            // }
         }
         
     } else {
@@ -35,3 +43,8 @@
     
     mysqli_close($conn);
 ?>
+
+<script>
+    var name_of_user = '<?php echo $name; ?>';
+    // document.write('Hola ' + name_of_user);
+</script>

@@ -10,4 +10,4 @@ WORKDIR /var/www/html/joel
 
 ADD . ./
 
-EXPOSE 20
+EXPOSE 80
