@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 <?php
     $servername = 'localhost:3306';
     $database = 'shop';
@@ -17,21 +26,20 @@
             $obj = $conn->query($sql);
 
             if ($obj) {
-                $aux_obj = $obj -> fetch_assoc();                
+                $aux_obj = $obj -> fetch_assoc();
                 $password_hash = $aux_obj['pass'];
 
                 if ($password_hash) {
                     if (password_verify($password, $password_hash)) {
-                        // echo 'Correct';
-                        // echo '<script>\n';
-                        // echo '\t var name_of_user = "' . '"\n';
-                        // echo '</script>\n';
                         $name = $aux_obj['user'];
-                        header('Location: ./loginCorrect.php');
+
+                        echo "<script>";
+                        echo "var name_of_user = '" . $name . "';";
+                        echo "localStorage.setItem('user', name_of_user);";
+                        echo "window.location.replace('../../index.html');";
+                        echo "</script>";
+                        // header('Location: ../../index.html');
                     }
-                } 
-                else {
-                    echo 'InCorrect';
                 }
             }
             
@@ -43,8 +51,5 @@
     
     mysqli_close($conn);
 ?>
-
-<script>
-    var name_of_user = '<?php echo $name; ?>';
-    // document.write('Hola ' + name_of_user);
-</script>
+</body>
+</html>
