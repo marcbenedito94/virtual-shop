@@ -13,6 +13,12 @@ out_product_details += `
     <tr>
         <td><h4 class="product-price">asa</h4></td>        
     </tr>
-</table>`;
+</table>
+<br/><br/>
+<button id="btn-buy" type="button" onclick="` + addProductToCart() + `">Comprar</button>`;
 
 product_details.innerHTML = out_product_details;
+
+function addProductToCart() {
+    localStorage.setItem('previus_cart', 'Hola');
+}
