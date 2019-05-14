@@ -38,7 +38,6 @@
                         echo "localStorage.setItem('user', name_of_user);";
                         echo "window.location.replace('../../index.html');";
                         echo "</script>";
-                        // header('Location: ../../index.html');
                     }
                 }
             }

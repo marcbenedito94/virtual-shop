@@ -2,7 +2,7 @@ var navBottom = document.getElementById('navBottom');
 var out_navBottom = '';
 
 var xmlhttp = new XMLHttpRequest();
-var url = './data/lincs.json';
+var url = './data/infoLincs.json';
 
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
