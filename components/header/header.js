@@ -14,10 +14,12 @@ var header_out_content = `
 
 function setLanguageToSpanish() {
     current_language = 'es';
+    getJsonByLang();
 }
 
 function setLanguageToEnglish() {
     current_language = 'en';
+    getJsonByLang();
 }
 
 function text_header_login_link() {
