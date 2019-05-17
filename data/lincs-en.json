@@ -1,7 +1,7 @@
 [
     {
         "id": "list-rh",
-        "title": "EnRecreación Histórica",
+        "title": "Historical recreation",
         "num-children": "2",
         "children": [
             {
@@ -10,11 +10,11 @@
                 "children": [
                     {
                         "id": "list-rh-armas-hachas",
-                        "title": "Hachas"
+                        "title": "Axes"
                     },
                     {
                         "id": "list-rh-armas-lanzas",
-                        "title": "Lanzas"            
+                        "title": "Spears"            
                     },
                     {
                         "id": "list-rh-armas-mazasmartillos",
@@ -36,26 +36,26 @@
             },
             {
                 "id": "list-rh-ropa",
-                "title": "Ropa"            
+                "title": "Clothes"            
             },
             {
                 "id": "list-rh-tiendas",
-                "title": "Tiendas"            
+                "title": "Shops"            
             },
             {
                 "id": "list-rh-campamento",
-                "title": "Campamento"
+                "title": "Camp"
             }
         ]
     },
     {
         "id": "list-cuchillos",
-        "title": "Cuchillos",
+        "title": "Knives",
         "num-children": "1",
         "children": [
             {
                 "id": "list-cuchillos-caza",
-                "title": "Caza"
+                "title": "Hunt"
             },
             {
                 "id": "list-cuchillos-survival",

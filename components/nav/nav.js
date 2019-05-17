@@ -1,9 +1,10 @@
 var nav = document.getElementById('nav');
-var out_nav = '';
 
 getJsonByLang();
 
 function printNav(array) {
+    var out_nav = '';
+
     _.chain(array)
         .map(function(item) {
             if (item) {
