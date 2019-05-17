@@ -21,8 +21,8 @@ function getJsonByLang() {
     
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                objects = JSON.parse(this.responseText);
-                // printNav(objects);
+                var objects = JSON.parse(this.responseText);
+                printNav(objects);
             }
         };
         xmlhttp.open("GET", url, true);
@@ -36,8 +36,8 @@ function getJsonByLang() {
     
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                objects = JSON.parse(this.responseText);
-                // printNav(objects);
+                var objects = JSON.parse(this.responseText);
+                printNav(objects);
             }
         };
         xmlhttp.open("GET", url, true);
