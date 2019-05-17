@@ -2,7 +2,7 @@ var article = document.getElementById('article');
 var out_article = '';
 
 var xmlhttp = new XMLHttpRequest();
-var url = './data/infoLincs.json';
+var url = './data/infoLincs-es.json';
 
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

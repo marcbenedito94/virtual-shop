@@ -1,19 +1,9 @@
 var nav = document.getElementById('nav');
 var out_nav = '';
 
-var xmlhttp = new XMLHttpRequest();
-var url = './data/lincs.json';
+getJsonByLang();
 
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var objects = JSON.parse(this.responseText);
-        printAside(objects);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-function printAside(array) {
+function printNav(array) {
     _.chain(array)
         .map(function(item) {
             if (item) {
@@ -46,7 +36,7 @@ function printAside(array) {
                 }
 
                 if (item && !item.children) {
-                    out_nav += '<li id="' + item.id + '" class="list-item" on><a href="#"><h3 class="list-item-title">' + item.title + '</h3></a></li>\n';                    
+                    out_nav += '<li id="' + item.id + '" class="list-item"><a href="#"><h3 class="list-item-title">' + item.title + '</h3></a></li>\n';                    
                 }
             }
         }).value();
@@ -64,13 +54,3 @@ function show_hide_sublist(element) {
         document.querySelector('#sub' + element).style.display = 'none';
     }
 }
-
-// function show_hide_subsublist(element) {
-//     var state_sublist2 = document.querySelector('#sub-sub' + element).style.display;
-
-//     if (state_sublist2 == 'none') {
-//         document.querySelector('#sub-sub' + element).style.display = 'block';
-//     } else {
-//         document.querySelector('#sub-sub' + element).style.display = 'none';
-//     }
-// }

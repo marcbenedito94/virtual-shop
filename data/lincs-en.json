@@ -1,0 +1,82 @@
+[
+    {
+        "id": "list-rh",
+        "title": "EnRecreación Histórica",
+        "num-children": "2",
+        "children": [
+            {
+                "id": "list-rh-armas",
+                "title": "Weapons",
+                "children": [
+                    {
+                        "id": "list-rh-armas-hachas",
+                        "title": "Hachas"
+                    },
+                    {
+                        "id": "list-rh-armas-lanzas",
+                        "title": "Lanzas"            
+                    },
+                    {
+                        "id": "list-rh-armas-mazasmartillos",
+                        "title": "Mazas y Martillos de Guerra"            
+                    },
+                    {
+                        "id": "list-rh-armas-dagas",
+                        "title": "Dagas"            
+                    },
+                    {
+                        "id": "list-rh-armas-espadas",
+                        "title": "Espadas"
+                    }
+                ]
+            },
+            {
+                "id": "list-rh-arqueria",
+                "title": "Arquería"            
+            },
+            {
+                "id": "list-rh-ropa",
+                "title": "Ropa"            
+            },
+            {
+                "id": "list-rh-tiendas",
+                "title": "Tiendas"            
+            },
+            {
+                "id": "list-rh-campamento",
+                "title": "Campamento"
+            }
+        ]
+    },
+    {
+        "id": "list-cuchillos",
+        "title": "Cuchillos",
+        "num-children": "1",
+        "children": [
+            {
+                "id": "list-cuchillos-caza",
+                "title": "Caza"
+            },
+            {
+                "id": "list-cuchillos-survival",
+                "title": "Survival"
+            },
+            {
+                "id": "list-cuchillos-complementos",
+                "title": "Bushcraft/Complementos"
+            }
+        ]
+    },
+    {
+        "id": "list-western",
+        "title": "Western"
+    },
+    {
+        "id": "list-survival",
+        "title": "Survival"
+    },
+    {
+        "id": "list-moroscristianos",
+        "title": "Moros y Cristianos"
+    }
+]
