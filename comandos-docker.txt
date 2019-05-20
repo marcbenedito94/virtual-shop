@@ -1,4 +1,0 @@
-docker exec -it joel-cont bash
-
-apt-get update
-apt-get install mysql-server
