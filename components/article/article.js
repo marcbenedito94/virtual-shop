@@ -1,19 +1,9 @@
 var article = document.getElementById('article');
-var out_article = '';
 
-var xmlhttp = new XMLHttpRequest();
-var url = './data/infoLincs-es.json';
-
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var objects = JSON.parse(this.responseText);
-        printArticle(objects);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
+getInfoLincsJsonByLang();
 
 function printArticle(array) {
+    var out_article = '';
     out_article += '<table id="article-table">';
     out_article += '<tr>';
 

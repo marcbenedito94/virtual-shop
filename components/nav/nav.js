@@ -1,6 +1,6 @@
 var nav = document.getElementById('nav');
 
-getJsonByLang();
+getLincsJsonByLang();
 
 function printNav(array) {
     var out_nav = '';
@@ -9,7 +9,7 @@ function printNav(array) {
         .map(function(item) {
             if (item) {
                 if (item && item.children) {
-                    out_nav += '<li id="' + item.id + '" class="list-item" onclick="show_hide_sublist(this.id)"><a href="#"><h3 class="list-item-title">' + item.title + '<h3></a>\n';
+                    out_nav += '<li id="' + item.id + '" class="list-item" onclick="showHideSublist(this.id)"><a href="#"><h3 class="list-item-title">' + item.title + '<h3></a>\n';
                     out_nav += '<ul id="sub' + item.id + '" class="sublist" onclick="" style="display: none">\n';
                     
                     var array_children = item.children;
@@ -45,7 +45,7 @@ function printNav(array) {
     nav.innerHTML = '<ul>\n' + out_nav + '\n</ul>';
 }
 
-function show_hide_sublist(element) {
+function showHideSublist(element) {
     var state = document.querySelector('#sub' + element).style.display;
     // var state_sublist1 = document.querySelector('#sub-sub' + element).style.display;    
 
