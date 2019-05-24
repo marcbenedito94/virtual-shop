@@ -1,9 +1,9 @@
-var header = document.getElementById('header');
+var header = document.getElementById('header'); //get the div with ID 'header'
 
-var user_logged = localStorage.getItem('user');
+var user_logged = localStorage.getItem('user'); //get the current logged user
 
-var login_link_text = '';
-var current_language = '';
+var login_link_text = ''; //will be 'login' or the current user
+var current_language = ''; //current language of the web
 
 var header_out_content = `
         <img id="header-img" src="" alt="Header Image">
@@ -12,9 +12,10 @@ var header_out_content = `
         <a id="link-lang-es" class="link-lang" href="#" onclick="setLanguageToSpanish()">es</a>
         <a id="link-lang-en" class="link-lang" href="#" onclick="setLanguageToEnglish()">en</a>`;
 
+//change language of the web to Spanish
 function setLanguageToSpanish() {
     current_language = 'es';
-    getLincsJsonByLang();
+    getLincsJsonByLang(); //function of functions.js
 
     var current_location = window.location.pathname;
 
@@ -24,9 +25,10 @@ function setLanguageToSpanish() {
     }
 }
 
+//change language of the web to Spanish
 function setLanguageToEnglish() {
     current_language = 'en';
-    getLincsJsonByLang();
+    getLincsJsonByLang(); //function of functions.js
 
     var current_location = window.location.pathname;
 
@@ -36,6 +38,7 @@ function setLanguageToEnglish() {
     }
 }
 
+//set text of login_link
 function textHeaderLoginLink() {
     if (user_logged) {
         return user_logged;
@@ -44,6 +47,7 @@ function textHeaderLoginLink() {
     }
 }
 
+//show or hide logout link
 function showHideLogoutLink() {
     if (user_logged) {
         return 'logout-link-inline';

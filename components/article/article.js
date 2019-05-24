@@ -1,7 +1,8 @@
-var article = document.getElementById('article');
+var article = document.getElementById('article'); //get div with ID 'article'
 
-getInfoLincsJsonByLang();
+getInfoLincsJsonByLang(); //function of functions.js
 
+//print the article table
 function printArticle(array) {
     var out_article = '';
     out_article += '<table id="article-table">';

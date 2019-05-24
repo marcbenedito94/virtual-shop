@@ -7,48 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    $servername = 'localhost:3306';
-    $database = 'shop';
-    $username = 'root';
-    $password = '';
-    $name = '';
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $database);
-    // Check connection
-    if ($conn) {        
-        $name = $_REQUEST['username'];
-        $password = $_REQUEST['password'];
-        
-        if ($name){
-            $sql = 'select username as user, password as pass from users where username="' . $name . '"';
+<?php    
+    require_once '../functions/functions-php.php';
 
-            $obj = $conn->query($sql);
-
-            if ($obj) {
-                $aux_obj = $obj -> fetch_assoc();
-                $password_hash = $aux_obj['pass'];
-
-                if ($password_hash) {
-                    if (password_verify($password, $password_hash)) {
-                        $name = $aux_obj['user'];
-
-                        echo "<script>";
-                        echo "var name_of_user = '" . $name . "';";
-                        echo "localStorage.setItem('user', name_of_user);";
-                        echo "window.location.replace('../../index.html');";
-                        echo "</script>";
-                    }
-                }
-            }
-            
-        }
-        
-    } else {
-        die('Connection failed: ' . mysqli_connect_error());
-    }
-    
-    mysqli_close($conn);
+    checkUserToLogin();
 ?>
 </body>
 </html>

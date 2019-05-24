@@ -1,7 +1,8 @@
-var nav = document.getElementById('nav');
+var nav = document.getElementById('nav'); //get the div with ID 'nav'
 
-getLincsJsonByLang();
+getLincsJsonByLang(); //function of functions.js
 
+//print nav menu
 function printNav(array) {
     var out_nav = '';
 
