@@ -1,0 +1,59 @@
+title: cuerno de reclamo
+description: cuerno 100% de toro, generalmente mayor de 30cm de largo. Con correa de sujeción +10€.
+price: 40
+----
+title: fíbula báscia grande
+description: fíbula de acero barilla corrugada y templada de gran reistencia y calidad color negro forja.
+price: grande-15 6,5-7cm, mediana-10 5,5-6cm, pequeña-10 4-5cm,  
+----
+title: Soporte para Hachas
+description: soporte de cuero de alta calidad con anillo de acero.
+price: 20
+----
+title: mochila táctica 30L
+description: mochila táctica con sistema molle para senderismo, treking, urbano, survival, airsoft, etc.
+price: 28
+----
+title: pulsera paracord
+description: pulsera hecha de cordon de cordino paracord, de 7 hebras con resistencia de más de 160Kg. Incluye 
+    cuchilla, pedernal, brújula y silbato de emergencia.
+price: 5
+----
+title: bolsa táctica
+description: bolsa táctica, uso cotidiano, con efecto molle, de gran comodidad y resistencia, buena distribución de los
+    objetos. Ideal para: EDC.
+----
+title: Jarra de cuerno
+description: jarra de cuerno de toro, con base de madera ajustada a presión. Sellada con cera de abeja para evitar poros y fugas.
+    Producto 100% ecológico. Capacidad X.
+price: 30
+----
+title: Encendedor medieval o chesquero
+description: compuesto de acero al carbono, una piedra de silex, un hongo yesquero, tela carbonizada y esparto.
+price: 25
+----
+title: bolso vikingo
+description: replica del bolso vikingo cosido a mano y madera trabajada a mano. Se sujeta de cuerda de cáñamo.
+price: 40
+----
+title: monedero
+description: monedero de cuero de calidad hecho y cosido a mano. Pueden variar su forma.
+nota: tiene modelos.
+price: 15
+----
+title: fíbula de aguja básica
+description: fíbula que se usaba como anclaje más provisional en las prendas. Basada en hallazgos arqueológicos. Compuesta de
+    bronce y laton. Tamaño 5,5-6cm aprox.
+price: 5
+----
+title: tabaquero de cuero
+description: 
+price: 30
+----
+title: cuchilla vikingo básico
+description: cuchillo utilitario vikingo semiartesanal, 
+price: 20
+----
+title: fíbula redonda de bronce
+description: fíbula basada en piezas de museo, 100% artesanal. Diámetro 6,5 cm aprox.
+price: 10

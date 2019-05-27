@@ -6,7 +6,7 @@ var login_link_text = ''; //will be 'login' or the current user
 var current_language = ''; //current language of the web
 
 var header_out_content = `
-        <img id="header-img" src="" alt="Header Image">
+        <img id="header-img" src="./img/header.jpg" alt="Header Image">
         <a id="login-link" href="./main/login/login.html">` + textHeaderLoginLink() + `</a>
         <a id="logout-link" class="` + showHideLogoutLink() + `" onclick="` + logout() + `" href="./index.html">logout</a>
         <a id="link-lang-es" class="link-lang" href="#" onclick="setLanguageToSpanish()">es</a>

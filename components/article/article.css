@@ -1,3 +1,6 @@
-#article {    
-    margin-bottom: 10%;
+#article {
+    position: absolute;
+    bottom: 10%;
+    right: 35%;
+    left: 35%;
 }
