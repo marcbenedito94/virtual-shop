@@ -16,7 +16,26 @@ var header_out_content = `
             <option value="fr">French</option>
         </select>
         <a id="link-lang-es" class="link-lang" href="#" onclick="setLanguageToSpanish()">es</a>
-        <a id="link-lang-en" class="link-lang" href="#" onclick="setLanguageToEnglish()">en</a>`;
+        <a id="link-lang-en" class="link-lang" href="#" onclick="setLanguageToEnglish()">en</a>
+        <br/><br/>
+        <p id="current-location-text">` + getCurrentLocation() + `</p>`;
+
+function getCurrentLocation() {
+    var current_location = '';
+
+    var full_current_location = window.location.pathname.slice(13, -5).split('/');
+    var length_full_current_location = full_current_location.length;    
+
+    if (length_full_current_location === 4) {
+        current_location = '/' + full_current_location[1] + '/' + full_current_location[2];
+    }
+
+    if (length_full_current_location === 2) {
+        current_location = '/main';
+    }
+
+    return current_location;
+}
 
 function getSelectedLanguage() {
     var selected_language = document.getElementById('language-selector').value;

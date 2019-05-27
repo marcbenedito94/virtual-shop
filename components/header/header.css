@@ -15,3 +15,8 @@
 .logout-link-inline {
     display: inline;
 }
+
+#current-location-text {
+    position: absolute;
+    left: 4%;
+}
