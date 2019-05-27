@@ -9,7 +9,7 @@ var header_out_content = `
         <img id="header-img" src="" alt="Header Image">
         <a id="login-link" href="./main/login/login.html">` + textHeaderLoginLink() + `</a>
         <a id="logout-link" class="` + showHideLogoutLink() + `" onclick="` + logout() + `" href="./index.html">logout</a>
-        <select id="language-selector">
+        <select id="language-selector" onchange="getSelectedLanguage()">
             <option value="es">Spanish</option>
             <option value="en">English</option>
             <option value="it">Italian</option>
