@@ -26,7 +26,7 @@ function getSelectedLanguage() {
 
     var current_location = window.location.pathname;
 
-    if (current_location == '/joel/index.html' || current_location == '/joel/index.html#') {
+    if (current_location === '/virtual-shop/index.html' || current_location === '/virtual-shop/index.html#') {
         current_language = selected_language;
         getInfoLincsJsonByLang();
     }
