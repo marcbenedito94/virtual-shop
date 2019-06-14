@@ -1,1 +1,1 @@
-const default_language = 'es';
+const default_language = 'en';

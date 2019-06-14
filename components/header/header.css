@@ -17,6 +17,6 @@
 }
 
 #current-location-text {
-    position: absolute;
-    left: 4%;
+    text-align: left;
+    margin-left: 4%;
 }

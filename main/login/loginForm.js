@@ -11,7 +11,7 @@ var login_out_content = `
 
     <br/><br/>
 
-    <form id="create-user-form" method="post" action="create-user.php">
+    <form id="create-user-form" method="post" action="createUser.php">
         <label for="name">New Username:</label>
         <input id="input-create-username" name="create-username" type="text">
         <label for="password">New Password:</label>

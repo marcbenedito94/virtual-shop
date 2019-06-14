@@ -4,15 +4,14 @@
     $username = 'root';
     $password = '';
     // Create connection
-    $connection = mysqli_connect($servername, $username, $password, $database);
+    $connection = new mysqli($servername, $username, $password, $database);
     // Check connection
     if ($connection) {        
         $name_created = $_REQUEST['create-username'];
         $password_created = $_REQUEST['create-password'];
         $password_hash = password_hash($password_created, PASSWORD_BCRYPT);
 
-        $sql = 'insert into users values (null, "' . $name_created . '", "' . $password_hash . '")';
-        $result = $connection->query($sql);
+        $sql = "insert into users values (null, '" . $name_created . "', '" . $password_hash . "')";
 
         if ($connection->query($sql) === TRUE) {
             echo "New record created successfully";

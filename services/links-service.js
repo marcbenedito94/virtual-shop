@@ -54,7 +54,7 @@ function getInfoLincsJsonByLang() {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var objects = JSON.parse(this.responseText);
-                printArticle(objects);
+                printFooter(objects);
             }
         };
         xmlhttp.open("GET", url_infoLincs, true);
@@ -69,7 +69,7 @@ function getInfoLincsJsonByLang() {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var objects = JSON.parse(this.responseText);
-                printArticle(objects);
+                printFooter(objects);
             }
         };
         xmlhttp.open("GET", url_infoLincs, true);
@@ -84,7 +84,7 @@ function getInfoLincsJsonByLang() {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 var objects = JSON.parse(this.responseText);
-                printArticle(objects);
+                printFooter(objects);
             }
         };
         xmlhttp.open("GET", url_infoLincs, true);
