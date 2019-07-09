@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="./components/header/header.css">
     <link rel="stylesheet" type="text/css" href="./components/nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="./components/main/main.css">
     <link rel="stylesheet" type="text/css" href="./components/footer/footer.css">
     <script src="./jquery.js"></script>
     <script src="./lodash.js"></script>
@@ -26,7 +27,8 @@
     <script src="./constants/Constants.js"></script>
     <script src="./services/links-service.js"></script>
     
-    <script src="./components/header/header.js"></script>    
+    <script src="./components/header/header.js"></script>
+    <?php require_once './main/productList/productList.php' ?>
     <script src="./components/nav/nav.js"></script>
     <script src="./components/footer/footer.js"></script>    
 </body>

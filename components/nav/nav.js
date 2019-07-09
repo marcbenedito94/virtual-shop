@@ -1,11 +1,13 @@
 var nav = document.getElementById('nav'); //get the div with ID 'nav'
+var main = document.getElementById('main');
+
+var out_nav = '';
+var out_main = '';
 
 getLincsJsonByLang(); //function of functions.js
 
 //print nav menu
 function printNav(array) {
-    var out_nav = '';
-
     _.chain(array)
         .map(function(item) {
             if (item) {
@@ -38,7 +40,7 @@ function printNav(array) {
                 }
 
                 if (item && !item.children) {
-                    out_nav += '<li id="' + item.id + '" class="list-item"><a href="#"><h3 class="list-item-title">' + item.title + '</h3></a></li>\n';                    
+                    out_nav += '<li id="' + item.id + '" class="list-item" onclick="printMainDiv()"><a href="#"><h3 class="list-item-title">' + item.title + '</h3></a></li>\n';                    
                 }
             }
         }).value();
@@ -56,3 +58,22 @@ function showHideSublist(element) {
         document.querySelector('#sub' + element).style.display = 'none';
     }
 }
+
+function printMainDiv() {
+    for (var index = 0; index < products_names_list.length; index ++) {
+        out_main += '<div>' +
+                        '<p>' + products_names_list[index] + '</p>' +
+                        '<p>' + products_descriptions_list[index] + '</p>' +
+                        '<p>' + products_prices_list[index] + ' €</p>' +
+                    '</div>';
+    }
+    
+    main.innerHTML =  out_main;
+}
+
+// function chainProductsArrays(list) {
+//     _.chain(products_names_list)
+//         .map(function(item) {
+//             out_main += item;
+//         }).value();
+// }
