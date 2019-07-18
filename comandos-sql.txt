@@ -2,16 +2,18 @@ create database shop;
 use shop;
 
 create table users (
-id_user integer primary key auto_increment,
-username varchar(10) unique not null,
-password varchar(100) not null
+	id_user integer primary key auto_increment,
+	username varchar(10) unique not null,
+	password varchar(100) not null
 );
 
 create table products (
-id_product smallint unsigned primary key auto_increment,
-name varchar(40) not null,
-description varchar(200) not null,
-price decimal(5,2) not null
+	id_product smallint unsigned primary key auto_increment,
+	type varchar(30) not null,
+	name varchar(40) not null,
+	description varchar(200) not null,
+	price decimal(5,2) not null,
+	img varchar(60) not null
 );
 
 insert into products values(null, '', '', );
