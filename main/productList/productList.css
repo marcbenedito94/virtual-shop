@@ -1,4 +1,4 @@
-#product-details-table {
+/* #product-details-table {
     margin: 0 auto;
 }
 
@@ -16,4 +16,45 @@
 
 .product-price {
     text-align: center;;
+} */
+
+#main {
+    overflow: scroll;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.article-class {
+    display: inline-block;
+    width: 22%;
+}
+
+.product-img {
+    width: 80%;
+    height: 80%;
+}
+
+.product-text {
+    width: 80%;
+}
+
+.article-class2 {
+    width: 80%;
+}
+
+.product-img2 {
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+.product-text2 {
+    float: right;
+    width: 50%;
+}
+
+.product-price2 {
+    float: right;
+    width: 50%;
 }

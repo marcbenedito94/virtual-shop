@@ -28,8 +28,6 @@
     <script src="./services/links-service.js"></script>
     
     <script src="./components/header/header.js"></script>
-    <?php require_once './main/productList/productList.php' ?>
     <script src="./components/nav/nav.js"></script>
-    <script src="./components/footer/footer.js"></script>    
 </body>
 </html>

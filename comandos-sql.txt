@@ -1,13 +1,13 @@
 create database shop;
 use shop;
 
-create table users (
+create table user (
 	id_user integer primary key auto_increment,
 	username varchar(10) unique not null,
 	password varchar(100) not null
 );
 
-create table products (
+create table product (
 	id_product smallint unsigned primary key auto_increment,
 	type varchar(30) not null,
 	name varchar(40) not null,
