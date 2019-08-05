@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./components/header/header.css">
     <link rel="stylesheet" type="text/css" href="./components/nav/nav.css">
     <link rel="stylesheet" type="text/css" href="./main/productList/productList.css">
@@ -63,40 +64,46 @@
     
     mysqli_close($connection);
 
-    // print '<main id="main">';
-    
-    // for ($index = 0; $index < 4; $index ++) {
-    //     // print '     <li class="product-cell">' . $products_type[$index] . '</li>';
-    //     print '<article class="article-class">';
-    //     print '<img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
-    //     print '<h3 class="product-text"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
-    //     print '<h2 class="product-price"><a>20€</a></h2>';
-    //     print '</article>';
-    //     // print '     <li class="product-cell">' . $products_names[$index] . '</li>';
-    //     // print '     <li class="product-cell">' . $products_descriptions[$index] . '</li>';
-    //     // print '     <li class="product-cell">' . $products_prices[$index] . '</li>';
-    //     // print '     <li class="product-cell">' . $products_img[$index] . '</li>';
-    // }
-
-    // print '</main>';
-
     print '<main id="main">';
     
-    for ($index = 0; $index < 4; $index ++) {
-        // print '     <li class="product-cell">' . $products_type[$index] . '</li>';
-        print '<article class="article-class2">';
-        print '<img class="product-img2"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
-        print '<h3 class="product-text2"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
-        print '<h2 class="product-price2"><a>20€</a></h2>';
-        print '</article>';
-        print '<br/>';
-        // print '     <li class="product-cell">' . $products_names[$index] . '</li>';
-        // print '     <li class="product-cell">' . $products_descriptions[$index] . '</li>';
-        // print '     <li class="product-cell">' . $products_prices[$index] . '</li>';
-        // print '     <li class="product-cell">' . $products_img[$index] . '</li>';
+    for ($index = 1; $index <= count($products_names); $index ++) {
+        if ($index % 4 != 0) {
+            print '<article class="article-class">';
+            print '<img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
+            print '<h3 class="product-text"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
+            print '<h2 class="product-price"><a>20€</a></h2>';
+            print '</article>';
+        } else {
+            print '<article class="article-class">';
+            print '<img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
+            print '<h3 class="product-text"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
+            print '<h2 class="product-price"><a>20€</a></h2>';
+            print '</article>';
+            print '<br/>';
+        }
+        
     }
 
     print '</main>';
+
+    // print '<main id="main">';
+    
+    // for ($index = 0; $index < 4; $index ++) {
+    //     print '<article class="article-class2">';
+    //     print '<img class="product-img2"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
+    //     print '<h3 class="product-text2"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
+    //     print '<h2 class="product-price2"><a>20€</a></h2>';
+    //     print '</article>';
+    //     print '<br/>';
+    // }
+
+    // print '</main>';
 ?>
+
+<section>
+    <div class="container-fluid">
+        <p>Hola</p>
+    </div>
+</section>
 </body>
 </html>
