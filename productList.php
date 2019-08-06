@@ -69,7 +69,7 @@
     for ($index = 1; $index <= count($products_names); $index ++) {
         if ($index % 4 != 0) {
             print '<article class="article-class">';
-            print '<img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
+            print '<a href="./productDetails.php"><img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt=""></a>';
             print '<h3 class="product-text"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
             print '<h2 class="product-price"><a>20€</a></h2>';
             print '</article>';
