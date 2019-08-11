@@ -33,11 +33,7 @@
     $username = 'root';
     $password = '';
 
-    $product_type = [];
-    $product_name = [];
-    $product_description = [];
-    $product_price = [];
-    $product_img = [];
+    $product_img, $product_name, $product_description, $product_price;
 
     // Create connection
     $connection = new mysqli($servername, $username, $password, $database);
@@ -49,6 +45,7 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
+                $product_img = 
                 array_push($product_type, $row["type"]);
                 array_push($product_name, $row["name"]);
                 array_push($product_description, $row["description"]);

@@ -2,18 +2,19 @@ create database shop;
 use shop;
 
 create table user (
-	id_user integer primary key auto_increment,
+	id integer primary key auto_increment,
 	username varchar(10) unique not null,
 	password varchar(100) not null
 );
 
 create table product (
-	id_product smallint unsigned primary key auto_increment,
-	type varchar(30) not null,
+	id smallint unsigned primary key auto_increment,
+	route varchar(50) not null,
 	name varchar(40) not null,
 	description varchar(200) not null,
 	price decimal(5,2) not null,
 	img varchar(60) not null
 );
 
-insert into products values(null, '', '', );
+insert into product values (null, 'list_moroscrisitanos', 'hacha no afilada', 'hacha para recreación', 40, 'rh-armas-hachas-hacha1.jpg');
+insert into product values (null, 'list_moroscrisitanos', 'cuchillo corto', 'cuchillo corto afilado', 20, 'rh-armas-hachas-hacha1.jpg');

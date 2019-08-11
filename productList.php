@@ -27,7 +27,7 @@
     <script src="./components/header/header.js"></script>
     <script src="./components/nav/nav.js"></script>
 
-    <?php    
+    <?php  
     $servername = 'localhost:3306';
     $database = 'shop';
     $username = 'root';
@@ -43,7 +43,7 @@
     $connection = new mysqli($servername, $username, $password, $database);
     // Check connection
     if ($connection) {
-        $sql = "select * from product";
+        $sql = "select * from product where route = ";
         $result = $connection->query($sql);
 
         if ($result->num_rows > 0) {
@@ -70,14 +70,14 @@
         if ($index % 4 != 0) {
             print '<article class="article-class">';
             print '<a href="./productDetails.php"><img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt=""></a>';
-            print '<h3 class="product-text"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
-            print '<h2 class="product-price"><a>20€</a></h2>';
+            print '<a href="./productDetails.php"><h3 class="product-text">Cuchillo no afilado con mango de madera</h3></a>';
+            print '<h2 class="product-price">20€</h2>';
             print '</article>';
         } else {
             print '<article class="article-class">';
-            print '<img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt="">';
-            print '<h3 class="product-text"><a href="#">Cuchillo no afilado con mango de madera</a></h3>';
-            print '<h2 class="product-price"><a>20€</a></h2>';
+            print '<a href="./productDetails.php"><img class="product-img"src="./assets/images/products/list-rh-armas-hachas/list-rh-armas-hachas-1.jpg" alt=""></a>';
+            print '<a href="./productDetails.php"><h3 class="product-text">Cuchillo no afilado con mango de madera</h3></a>';
+            print '<h2 class="product-price">20€</h2>';
             print '</article>';
             print '<br/>';
         }

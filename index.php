@@ -28,6 +28,7 @@
     <script src="./services/links-service.js"></script>
     
     <script src="./components/header/header.js"></script>
-    <script src="./components/nav/nav.js"></script>
+    <?php include_once './components/nav/nav.php' ?>
+    <!-- <script src="./components/nav/nav.js"></script> -->
 </body>
 </html>
